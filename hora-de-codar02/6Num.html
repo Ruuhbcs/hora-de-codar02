@@ -1,0 +1,56 @@
+<!--
+    7. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2</title>
+</head>
+<body>
+    <script>
+        var primeiroNumero = prompt("Digite o primeiro número:");
+        var segundoNumero = prompt("Digite o segundo número:");
+        var terceiroNumero = prompt("Digite o terceiro número:");
+        var quartoNumero = prompt("Digite o  quarto número:");
+        var quintoNumero = prompt("Digite o quinto número:");
+        var sextoNumero = prompt("Digite por fim o sexto número:");
+
+        primeiroNumero = parseFloat(primeiroNumero);
+        segundoNumero = parseFloat(segundoNumero);
+        terceiroNumero = parseFloat(terceiroNumero);
+        quartoNumero = parseFloat(quartoNumero);
+        quintoNumero = parseFloat(quintoNumero);
+        sextoNumero = parseFloat(sextoNumero);
+
+        var soma = 0;
+
+        if (primeiroNumero < 72) {
+            soma =+ primeiroNumero;
+        } 
+        if (segundoNumero < 72) {
+            soma =+ segundoNumero;
+        }
+        if (terceiroNumero < 72) {
+            soma =+ terceiroNumero
+        }
+        if (quartoNumero < 72) {
+            soma =+ quartoNumero;
+        }
+        if (quintoNumero < 72) {
+            soma =+ quintoNumero;
+        }
+        if (sextoNumero < 72) {
+            soma =+ sextoNumero;
+        }
+ 
+        if (soma > 0) {
+    alert("A soma dos números inferiores a 72 é: " + soma);
+    } else {
+    alert("Não tem números menores que 72 para somar.");
+    }
+    </script>
+</body>
+</html>

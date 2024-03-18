@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hora de codar</title>
+</head>
+<body>
+  <script>
+    var soma = num1 + num2
+    var sub = num1 - num2
+    var div = num1 / num2
+    var multi = num1 * num2
+    var operacao = parseInt(prompt("Digite a operacao desejada: " + "\n" + "Adicao: 1" + "\n" + "Subtracao: 2"
+    + "\n" + "Divisao: 3" + "\n" + "Multiplicacao: 4"))
+
+    if (operacao > 4 || operacao < 1){
+      alert("Operacao inexistente")
+      console.log("Operacao inexistente")
+    }
+    else 
+    {
+      var num1 = parseFloat(prompt("Digite o primeiro valor: "))
+      var num2 = parseFloat(prompt("Digite o segundo valor: "))
+
+      if (operacao == 1 ){
+        alert("O resultado foi: " + soma)
+        console.log("O resultado foi: " + soma)
+      }
+      if (operacao == 2 ){
+        alert("O resultado foi: " + sub)
+        console.log("O resultado foi: " + sub)
+      }
+      if (operacao == 3 ){
+        alert("O resultado foi: " + div)
+        console.log("O resultado foi: " + div)
+      }
+      if (operacao == 4 ){
+        alert("O resultado foi: " + multi)
+        console.log("O resultado foi: " + multi)
+      }
+
+    }
+  </script>
+</body>
+</html>

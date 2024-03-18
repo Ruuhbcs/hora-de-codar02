@@ -1,0 +1,33 @@
+<!--
+    5.  Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2</title>
+</head>
+<body>
+    <script>
+        var primeiroNumero = prompt("Digite o primeiro número:");
+        var segundoNumero = prompt("Digite o segundo número:");
+        var terceiroNumero = prompt("Digite o terceiro número:");
+        var quartoNumero = prompt("Digite o  quarto número:");
+        var quintoNumero = prompt("Digite o quinto número:");
+        var sextoNumero = prompt("Digite por fim o sexto número:");
+
+        primeiroNumero = parseFloat(primeiroNumero);
+        segundoNumero = parseFloat(segundoNumero);
+        terceiroNumero = parseFloat(terceiroNumero);
+        quartoNumero = parseFloat(quartoNumero);
+        quintoNumero = parseFloat(quintoNumero);
+        sextoNumero = parseFloat(sextoNumero);
+
+        var somaAritmetica = primeiroNumero + segundoNumero + terceiroNumero + quartoNumero + quintoNumero + sextoNumero / 6;
+
+        alert("Os números digitados foram: " + primeiroNumero + segundoNumero + terceiroNumero + quartoNumero + quintoNumero + sextoNumero + " A soma aritmética desses números é: " + somaAritmetica);
+    </script>
+</body>
+</html>

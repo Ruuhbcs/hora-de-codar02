@@ -1,0 +1,37 @@
+<!--
+    6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2</title>
+</head>
+<body>
+    <script>
+        var primeiroNumero = prompt("Digite o primeiro número:");
+        var segundoNumero = prompt("Digite o segundo número:");
+        var terceiroNumero = prompt("Digite o terceiro número:");
+        var quartoNumero = prompt("Digite o  quarto número:");
+
+        primeiroNumero = parseFloat(primeiroNumero);
+        segundoNumero = parseFloat(segundoNumero);
+        terceiroNumero = parseFloat(terceiroNumero);
+        quartoNumero = parseFloat(quartoNumero);
+
+        if (primeiroNumero > segundoNumero && primeiroNumero > terceiroNumero && primeiroNumero > quartoNumero) {
+            maior = primeiroNumero;
+        } else if (segundoNumero > terceiroNumero && segundoNumero > quartoNumero) {
+            maior = segundoNumero;
+        } else if (terceiroNumero > quartoNumero) {
+            maior = terceiroNumero;
+        } else {
+            maior = quartoNumero;
+        }
+
+        alert("O primeiro número foi: " + primeiroNumero + " O último número foi: " + quartoNumero + " E o maior número entre os quatro números fornecidos foi: " + maior);
+    </script>
+</body>
+</html>

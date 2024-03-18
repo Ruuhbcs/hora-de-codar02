@@ -1,0 +1,41 @@
+<!--
+    4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2</title>
+</head>
+<body>
+    <script>
+        var primeiroNumero = prompt("Digite o primeiro número:");
+        var segundoNumero = prompt("Digite o segundo número:");
+        var terceiroNumero = prompt("Digite o terceiro número:");
+
+        primeiroNumero = parseFloat(primeiroNumero);
+        segundoNumero = parseFloat(segundoNumero);
+        terceiroNumero = parseFloat(terceiroNumero);
+
+        var maior;
+        var segundoMaior;
+
+        //? separa a condição da expressão que será retornada se a condição for verdadeira. : separa a expressão que será retornada se a condição for falsa.
+        if (primeiroNumero > segundoNumero && primeiroNumero > terceiroNumero) {
+            maior = primeiroNumero;
+            segundoMaior = (segundoNumero > terceiroNumero) ? /*se for*/ segundoNumero : /*senão*/ terceiroNumero;
+        } else if (segundoNumero > terceiroNumero) {
+            maior = segundoNumero;
+            segundoMaior = (primeiroNumero > terceiroNumero) ? primeiroNumero : terceiroNumero;
+        } else {
+            maior = terceiroNumero;
+            segundoMaior = (primeiroNumero > segundoNumero) ? primeiroNumero : segundoNumero;
+        }
+
+        var soma = maior + segundoMaior;
+        alert("A soma dos 2 maiores valores é: " + soma);
+    </script>
+</body>
+</html>

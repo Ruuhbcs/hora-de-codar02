@@ -1,0 +1,27 @@
+<!--
+    9. Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hora de codar</title>
+</head>
+<body>
+    <script>
+
+    var ano = parseInt(prompt("Digite o seu ano de nascimento: "))
+
+    if (ano <= 2008) {
+      alert("Voce pode votar esse ano!")
+      console.log("Voce pode votar esse ano!")
+    }
+    if (ano > 2008) {
+      alert("Voce nao pode votar esse ano!")
+      console.log("Voce nao pode votar esse ano!")
+    }
+  </script>
+</body>
+</html>
